@@ -50,3 +50,5 @@ eb create stroke-env
 
 eb terminate stroke-env
 ```
+
+Deployed link: stroke-env.eba-jce4prv9.eu-west-1.elasticbeanstalk.com
