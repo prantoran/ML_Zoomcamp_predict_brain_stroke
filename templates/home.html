@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Stroke Prognosis</title>
+</head>
+
+<body style="background-color:rgb(140, 200, 243);">
+    <td>
+        <H1 style="text-align:center">Brain Stroke Prognosis</H1>
+        <a href="https://github.com/prantoran/ML_Zoomcamp_predict_brain_stroke">
+            <p style="text-align:center">Project info (github repo)</p>
+        </a>
+        <p style="text-align:center">Model trained with 3984 observations using <a href="https://www.kaggle.com/datasets/jillanisofttech/brain-stroke-dataset">Brain Stroke Dataset</a> from Kaggle.</p>
+
+        <p style="text-align:center">Are you worried about your or family member's health or chances of stroke and take precautionary steps? <br>
+            With this model, you can provide the mentioned features such as age, bmi, etc, <br>
+            and get an approximate probability of brain stroke. <br>
+            <b> This project was made for learning and fun purposes and is not a production service</b>
+        </p>
+    </td>
+
+    <div style="text-align:center;">
+        <form method="POST">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="0" max="150" id="age" placeholder = 42>
+            <br>
+
+            <label for="hypertension">Hypertension:</label>
+            <select name="hypertension" id="hypertension">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+                
+            </select>
+
+            <label for="heart_disease">Heart Disease:</label>
+            <select name="heart_disease" id="heart_disease">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+                
+            </select>
+            <br>
+
+            <label for="ever_married">Ever Married:</label>
+            <select name="ever_married" id="ever_married">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+                
+            </select>
+
+            <label for="work_type">Work Type:</label>
+            <select name="work_type" id="work_type">
+                <option value="private">Private</option>
+                <option value="self-employed">Self Employed</option>
+                <option value="children">Children</option>
+                <option value="govt_job">Govt Job</option>
+
+            </select>
+            
+            <br>
+            <label for="residence_type">Residence Type:</label>
+            <select name="residence_type" id="residence_type">
+                <option value="urban">Urban</option>
+                <option value="rural">Rural</option>
+            </select>
+
+            <label for="avg_glucose_level">Avg Glucose Level:</label>
+            <input type="number" name="avg_glucose_level" min="50" max="280" id="avg_glucose_level" placeholder = 100>
+            <br>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" name="bmi" min="10" max="69" id="bmi" placeholder = 29>
+
+            <label for="smoking_status">Smoking Status:</label>
+            <select name="smoking_status" id="smoking_status">
+                <option value="never_smoked">Never Smoked</option>
+                <option value="unknown">Unknown</option>
+                <option value="formerly_smoked">Formerly Smoked</option>
+                <option value="smokes">Smokes</option>
+            </select>
+            <br>
+            <input type="submit" value="Send" />
+        </form>
+    </div>
+</body>
+
+</html>
